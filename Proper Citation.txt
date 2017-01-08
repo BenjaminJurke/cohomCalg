@@ -1,0 +1,119 @@
+Dear reader, 
+
+if you used cohomCalg in your work and would like to properly cite the program
+in your paper, please use one of the following two BibTeX source codes:
+
+
+Use   \cite{cohomCalg:Implementation}   at the appropiate place of your TeX file
+      -------------------------------
+
+                                   +----------------------+   
+"Fancy" BibTeX entry:            <-| Use this if possible |
+=====================              +----------------------+
+
+@Misc{cohomCalg:Implementation,
+     title        = "{\fontfamily{put}\bfseries\footnotesize\selectfont cohomCalg} package",
+     howpublished = "Download link",
+     url          = "http://wwwth.mppmu.mpg.de/members/blumenha/cohomcalg/",
+     note         = "High-performance line bundle cohomology computation based on \cite{CohomOfLineBundles:Algorithm}",
+     year         = "2010"
+}
+@Article{CohomOfLineBundles:Algorithm,
+     author    = "Blumenhagen, Ralph and Jurke, Benjamin and Rahn, Thorsten and Roschy, Helmut",
+     title     = "{Cohomology of Line Bundles: A Computational Algorithm}",
+     publisher = "AIP",
+     year      = "2010",
+		 journal   = "J.~Math.~Phys.",
+     volume    = "51",
+     number    = "10",
+     eid       = "103525",
+     numpages  = "15",
+     pages     = "103525",
+     doi       = "10.1063/1.3501132",
+     eprint    = "1003.5217",
+     archivePrefix = "arXiv",
+     primaryClass  = "hep-th",
+     SLACcitation  = "%%CITATION = 1003.5217;%%"
+}
+
+This one uses a different font for the cohomCalg application name. Note that 
+the usage of the font 'put' might cause problems on some older (La)TeX 
+distributions. On a halfway reasonable modern machine it should give you no 
+trouble.
+
+
+
+Standard BibTeX entry:
+======================
+
+@Misc{cohomCalg:Implementation,
+     title        = "cohomCalg package",
+     howpublished = "Download link",
+     url          = "http://wwwth.mppmu.mpg.de/members/blumenha/cohomcalg/",
+     note         = "High-performance line bundle cohomology computation based on \cite{CohomOfLineBundles:Algorithm}",
+     year         = "2010"
+}
+@Article{CohomOfLineBundles:Algorithm,
+     author    = "Blumenhagen, Ralph and Jurke, Benjamin and Rahn, Thorsten and Roschy, Helmut",
+     title     = "{Cohomology of Line Bundles: A Computational Algorithm}",
+     publisher = "AIP",
+     year      = "2010",
+		 journal   = "J.~Math.~Phys.",
+     volume    = "51",
+     number    = "10",
+     eid       = "103525",
+     numpages  = "15",
+     pages     = "103525",
+     doi       = "10.1063/1.3501132",
+     eprint    = "1003.5217",
+     archivePrefix = "arXiv",
+     primaryClass  = "hep-th",
+     SLACcitation  = "%%CITATION = 1003.5217;%%"
+}
+
+
+Choose what best suits your needs.
+
+
+Furthermore, if you want to cite the Proof paper of the algorithm or the Applications paper,
+you can use the following BibTeX entries:
+
+
+
+Additional BibTeX entries:
+==========================
+
+@Article{CohomOfLineBundles:Proof,
+     author    = "Rahn, Thorsten and Roschy, Helmut",
+     title     = "{Cohomology of Line Bundles: Proof of the Algorithm}",
+     publisher = "AIP",
+     year      = "2010",
+     journal   = "J.~Math.~Phys.",
+     volume    = "51",
+     number    = "10",
+     eid       = "103520",
+     numpages  = "11",
+     pages     = "103520",
+     doi       = "10.1063/1.3501135",
+     eprint    = "1006.2392",
+     archivePrefix = "arXiv",
+     primaryClass  = "hep-th",
+     SLACcitation  = "%%CITATION = 1006.2392;%%"
+}
+
+@article{CohomOfLineBundles:Applications,
+      author    = "Blumenhagen, Ralph and Jurke, Benjamin and Rahn, Thorsten and Roschy, Helmut",
+      title     = "{Cohomology of Line Bundles: Applications}",
+      year      = "2010",
+      note      = "* Temporary entry *",
+      journal   = "submitted to JHEP",
+      eprint    = "1010.3717",
+      archivePrefix = "arXiv",
+      primaryClass  = "hep-th",
+      SLACcitation  = "%%CITATION = 1010.3717;%%"
+}
+
+
+
+Best regards,
+the authors

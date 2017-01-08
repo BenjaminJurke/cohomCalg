@@ -1,0 +1,23 @@
+% Input file for the ralfsalg program...
+%
+
+
+vertex y|GLSM:(0,3,0,1,1,0,1,0,1,0);
+vertex x|GLSM:(0,2,0,1,0,1,0,1,0,1);
+vertex z|GLSM:(-4,1,2,0,0,0,0,0,0,0);
+vertex v1|GLSM:(1,0,-1,0,0,0,0,0,0,0);
+vertex v2|GLSM:(1,0,0,0,0,0,0,0,0,0);
+vertex v3|GLSM:(1,0,0,0,0,0,0,0,0,0);
+vertex v4|GLSM:(1,0,0,0,0,0,0,0,0,0);
+vertex s1|GLSM:(0,0,-1,1,0,0,0,0,0,0);
+vertex s2|GLSM:(0,0,0,-1,1,0,0,0,0,0);
+vertex s3|GLSM:(0,0,0,0,-1,1,0,0,0,0);
+vertex s4|GLSM:(0,0,0,0,0,-1,1,0,0,0);
+vertex s5|GLSM:(0,0,0,0,0,0,-1,1,0,0);
+vertex s6|GLSM:(0,0,0,0,0,0,0,-1,1,0);
+vertex s7|GLSM:(0,0,0,0,0,0,0,0,-1,1);
+vertex s8|GLSM:(0,0,0,0,0,0,0,0,0,-1);
+
+srideal [s1*y,s2*y,s4*y,s6*y,x*z,s1*x,s2*x,s3*x,s4*x,s5*x,s6*x,s7*x,s4*z,s5*z,s6*z,s7*z,s8*z,s1*v1,s3*v1,s5*v1,s7*v1,s1*s4,s1*s5,s1*s6,s1*s7,s1*s8,s2*s5,s2*s6,s2*s7,s2*s8,s3*s6,s3*s7,s3*s8,s4*s8,s5*s6,s5*s8,s8*v1*y,s2*s3*z,v2*v3*v4];
+
+ambientcohom O(0,0,0,0,0,0,0,0,0,0);

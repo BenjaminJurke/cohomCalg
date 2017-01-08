@@ -1,0 +1,21 @@
+% The vertices and GLSM charges:
+    vertex u1 | GLSM:  ( 1,  0,  0,  1 );
+    vertex u2 | GLSM:  ( 1,  0,  1,  0 );
+    vertex u3 | GLSM:  ( 1,  1,  0,  0 );
+    vertex u4 | GLSM:  ( 0,  0,  0,  1 );
+    vertex u5 | GLSM:  ( 0,  0,  1,  0 );
+    vertex u6 | GLSM:  ( 0,  1,  0,  0 );   
+
+% The Stanley-Reisner ideal:
+    srideal [u1*u2,  u1*u3,  u1*u4,  u2*u3,  
+             u2*u5,  u3*u6,  u4*u5,  u4*u6,  u5*u6];
+
+% And finally the requested line bundle cohomologies:
+    ambientcohom O( -2,  0, -2,  0 );
+    ambientcohom O( -3,  2, -2, -1 );
+    
+    
+    
+    
+    
+    
