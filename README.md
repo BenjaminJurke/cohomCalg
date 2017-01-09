@@ -27,10 +27,10 @@ A full documentation and several example input files are included in the cohomCa
 * **v0.31b** (April 18, 2012): Minor bugfix due to GCC 4.6 compatibility issues
 * **v0.31** (May 25, 2011): Multi-core support, new vector bundle routines, overall improvements
 * **v0.21** (October 18, 2010): cohomCalg Koszul extension added!
-* **v0.13** (July 23, 2010): Integration mode added, see command line option "--integrated" in manual.
+* **v0.13** (July 23, 2010): Integration mode added, see command line option `--integrated` in manual.
 * **v0.12** (June 25, 2010): Several minor bugfixes and improvements.
 * **v0.11** (May 4, 2010): Original public release of the cohomCalg implementation.
-* **v0.04** (March 29, 2010): Original public release of the Mathematica 7 script, which is still available here.
+* **v0.04** (March 29, 2010): Original public release of the Mathematica 7 script, which is still available [here](https://github.com/BenjaminJurke/cohomCalg/tree/master/old/cohomcalg-script-v004).
 
 
 # Known bugs & Shortcomings
