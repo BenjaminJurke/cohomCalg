@@ -498,7 +498,7 @@ void CountRationalFunctionsWorker(void *p_dat)
 		// Microsoft in their infinite wisdom "broke" the command in Windows Vista / 7, as the default
 		// destination is only accessible in Administrator-mode...
 		char tmpfilename[64];
-		safe_sprintf(tmpfilename, sizeof(tmpfilename), "__x_TMP_polylib_file_%dy.tmp", crd->worker_id);
+		safe_sprintf(tmpfilename, sizeof(tmpfilename), "__x_TMP_polylib_file_%dy.tmp", (int) crd->worker_id);
 		//const char *tmpfilename = "__x_TMP_polylib_file_y.tmp";
 		FILE *points_val = fopen(tmpfilename, "w+");
 		if (!points_val)
@@ -1013,7 +1013,7 @@ bool CRationals::ComputeCohomologies(const CInternalData &id, const CMonomialsLi
     {
         // Show some progress status output
         char buf[128];
-        safe_sprintf(buf, sizeof(buf), "Computing target cohomology %d of %d (%.1f%% done)...", i+1, numCohoms, (double) i*100 / numCohoms);
+        safe_sprintf(buf, sizeof(buf), "Computing target cohomology %d of %d (%.1f%% done)...", (int) (i+1), (int) numCohoms, (double) i*100 / numCohoms);
         CONSOLE_OUT(buf << "       \r");
 
         // Prepare the input data and compute the cohomology
