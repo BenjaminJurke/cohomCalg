@@ -19,7 +19,7 @@ The source code is freely available under the GNU GPL v3 license terms. Furtherm
 
 # Documentation
 
-A full documentation and several example input files are included in the cohomCalg download package, see "[manual.pdf](https://github.com/BenjaminJurke/cohomCalg/blob/master/manual-031.pdf)". Furthermore, you can [eMail us](mailto:mail@benjaminjurke.net?subject=cohomCalg) for technical support or other related questions. For ease of use the package includes pre-compiled binaries for Microsoft Windows both in 32- and 64-bit versions, with the latter being considerably faster.
+A full documentation and several example input files are included in the cohomCalg download package, see "[manual.pdf](https://github.com/BenjaminJurke/cohomCalg/blob/master/manual.pdf)". Furthermore, you can [eMail us](mailto:mail@benjaminjurke.net?subject=cohomCalg) for technical support or other related questions. For ease of use the package includes pre-compiled binaries for Microsoft Windows both in 32- and 64-bit versions, with the latter being considerably faster.
 
 
 # Changelog
