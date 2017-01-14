@@ -24,8 +24,9 @@ A full documentation and several example input files are included in the cohomCa
 
 # Changelog
 
-* **v0.31b** (April 18, 2012): Minor bugfix due to GCC 4.6 compatibility issues
-* **v0.31** (May 25, 2011): Multi-core support, new vector bundle routines, overall improvements
+* **v0.31c** (January 14, 2017): Minor update due to GCC 6.2 compatibility issues, recompiled Windows binaries.
+* **v0.31b** (April 18, 2012): Minor bugfix due to GCC 4.6 compatibility issues.
+* **v0.31** (May 25, 2011): Multi-core support, new vector bundle routines, overall improvements.
 * **v0.21** (October 18, 2010): cohomCalg Koszul extension added!
 * **v0.13** (July 23, 2010): Integration mode added, see command line option `--integrated` in manual.
 * **v0.12** (June 25, 2010): Several minor bugfixes and improvements.
