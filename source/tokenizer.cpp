@@ -42,7 +42,7 @@ using namespace std;
 
 bool operator!=(const CToken &lhs, const CToken &rhs)
 {
-    /* The operator function handles the comparision of two tokens. We do NOT compare the
+    /* The operator function handles the comparison of two tokens. We do NOT compare the
        InputOffset, i.e. just the data and type of the tokens has to be equal. */
 
     if (lhs.tkType != rhs.tkType) return true;

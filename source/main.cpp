@@ -218,10 +218,10 @@ void CCmdLineArguments::PrintHelp()
     CONSOLE_MSG_OUT("Syntax:  cohomcalg [--option1] [--option2] ... InputFileName [> OutputFileName]");
     CONSOLE_MSG_OUT("");
     CONSOLE_MSG_OUT("Command line options:");
-    CONSOLE_MSG_OUT("  --in=\"...\"      Treats the text between paranthesis like additional");
+    CONSOLE_MSG_OUT("  --in=\"...\"      Treats the text between parentheses like additional");
     CONSOLE_MSG_OUT("                  input data, i.e. like appended content of the input file.");
     CONSOLE_MSG_OUT("  --nomonomfile   Prohibits usage and generation of monomial file.");
-    CONSOLE_MSG_OUT("  --checkserre    Computes the Serre dual cohomology for comparision.");
+    CONSOLE_MSG_OUT("  --checkserre    Computes the Serre dual cohomology for comparison.");
     CONSOLE_MSG_OUT("  --noreduction   Deactivates the Serre self-duality reduction for ambiguous");
     CONSOLE_MSG_OUT("                  monomials (may increase computation time dramatically!)");
     CONSOLE_MSG_OUT("  --hideinput     Does not print the input data read from the input file.");
@@ -690,7 +690,7 @@ typedef struct
     }
 
     CONSOLE_MSG_OUT("");
-    CONSOLE_MSG_OUT("    All done. Programm run successfully completed.");
+    CONSOLE_MSG_OUT("    All done. Program run successfully completed.");
     CONSOLE_MSG_OUT("");
 
     return 0;
