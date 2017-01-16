@@ -523,7 +523,7 @@ void CountRationalFunctionsWorker(void *p_dat)
 	}
 	else
 	{
-		WARN_OUT("Counting of the rationoms errorneous - is your input geometry valid?");
+		WARN_OUT("Counting of the rationals erroneous - is your input geometry valid?");
 
 		// During a normal program run, we have the warning output, but in integration mode we treat this as a serious error
 		if (CCmdLineArguments::GetVerboseLevel() < -5)
@@ -853,7 +853,7 @@ bool CRationals::ComputeCohomology(const CInternalData &id, CMonomialsList &ml, 
     {
         MSG_OUT("Verbose level 2: Serre dualization information:");
         MSG_OUT("-----------------------------------------------");
-        MSG_OUT("    Due to the ambiguous contributions to the requested cohomologies the following braching occured:");
+        MSG_OUT("    Due to the ambiguous contributions to the requested cohomologies the following branching occurred:");
         MSG_OUT("    - \"normal\" configurations:   " << numcohoms << " (" << BytesToReadableSize(numcohoms * sizeof(ui32vec64)) << " memory)");
         MSG_OUT("    - Serre-dual configurations: " << numdualcohoms << " (" << BytesToReadableSize(numdualcohoms * sizeof(ui32vec64)) << " memory)");
         MSG_OUT("");
