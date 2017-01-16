@@ -34,7 +34,6 @@ using namespace std;
 #define APP_NAME      "cohomCalg"
 #define APP_VERSION   "0.31c"
 #define APP_AUTHOR    "author: Benjamin Jurke (mail@benjaminjurke.net)" << std::endl << "    Based on the algorithm presented in arXiv:1003.5217"
-#define APP_UPDATE    __DATE__ << " @ " << __TIME__
 #define APP_PLATFORM  APP_TARGET_OS << " " << APP_ARCH
 
 
@@ -420,7 +419,7 @@ typedef struct
     stringstream ss;
     ss << endl
        << "    " << APP_NAME << " v" << APP_VERSION << endl
-       << "    (compiled on " << APP_UPDATE <<" for " << APP_PLATFORM << ")" << endl
+       << "    (compiled for " << APP_PLATFORM << ")" << endl
        << "    " << APP_AUTHOR << endl
        << endl;
     string strAppInfo = ss.str();
