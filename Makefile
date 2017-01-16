@@ -8,7 +8,6 @@
 CC        := g++
 CFLAGS    := -O3
 LD        := g++
-LDFLAGS   := 
 # Note: (1) If you want to enforce 32-bit or 64-bit compilation, 
 #           add "-m32" or "-m64" to both CFLAGS and LDFLAGS.
 #       (2) If you want to enforce a static linking of all libraries 
@@ -36,12 +35,12 @@ vpath %.cpp $(COHOMCALG_SRC_DIR)
 # macros for .c/.cpp dirs
 define make-goal-cpp
 $1/%.o: %.cpp
-	$(CC) $(INCLUDES) $(DEFS) $(CFLAGS) -c $$< -o $$@
+	$(CC) $(INCLUDES) $(DEFS) $(CPPFLAGS) $(CXXFLAGS) -c $$< -o $$@
 endef
 
 define make-goal-c
 $1/%.o: %.c
-	$(CC) $(INCLUDES) $(DEFS) $(CFLAGS) -c $$< -o $$@
+	$(CC) $(INCLUDES) $(DEFS) $(CPPFLAGS) $(CFLAGS) -c $$< -o $$@
 endef
 
 
