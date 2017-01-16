@@ -24,6 +24,7 @@ A full documentation and several example input files are included in the cohomCa
 
 # Changelog
 
+* **v0.31d** (January 16, 2017): Several minor updates and corrections.
 * **v0.31c** (January 14, 2017): Minor update due to GCC 6.2 compatibility issues, recompiled Windows binaries.
 * **v0.31b** (April 18, 2012): Minor bugfix due to GCC 4.6 compatibility issues.
 * **v0.31** (May 25, 2011): Multi-core support, new vector bundle routines, overall improvements.
