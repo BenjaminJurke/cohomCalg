@@ -22,33 +22,33 @@
     <ProjectGuid>{39FD5032-AB8D-45D1-BA61-2CCF5B4A6661}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>cohomCalg</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>7.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <WholeProgramOptimization>false</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v140_xp</PlatformToolset>
+    <PlatformToolset>v141_xp</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -73,21 +73,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\..\..\bin</OutDir>
-    <IntDir>$(SolutionDir)\..\..\build\msvc15\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)\..\..\build\msvc17\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>cohomCalg32D</TargetName>
     <IncludePath>$(SolutionDir)\..\..\source\polylib_mod\;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\..\..\bin</OutDir>
-    <IntDir>$(SolutionDir)\..\..\build\msvc15\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)\..\..\build\msvc17\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>cohomCalgD</TargetName>
     <IncludePath>$(SolutionDir)\..\..\source\polylib_mod\;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\..\..\bin</OutDir>
-    <IntDir>$(SolutionDir)\..\..\build\msvc15\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)\..\..\build\msvc17\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>cohomCalg32</TargetName>
     <IncludePath>$(SolutionDir)\..\..\source\polylib_mod\;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);</IncludePath>
     <GenerateManifest>false</GenerateManifest>
@@ -95,7 +95,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)\..\..\bin</OutDir>
-    <IntDir>$(SolutionDir)\..\..\build\msvc15\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(SolutionDir)\..\..\build\msvc17\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>cohomCalg</TargetName>
     <IncludePath>$(SolutionDir)\..\..\source\polylib_mod\;$(VC_IncludePath);$(WindowsSdk_71A_IncludePath);</IncludePath>
     <GenerateManifest>false</GenerateManifest>
