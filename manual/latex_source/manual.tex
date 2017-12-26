@@ -22,7 +22,7 @@
 \usepackage[shortcuts, cyremdash]{extdash}
 
 
-\def\manualversion{v0.31d}
+\def\manualversion{v0.32}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -183,8 +183,8 @@
 %\vspace{1cm}
 \vfill
 \subsection*{Contact info}
-Please send all C/{\CPP}~implementation ({\cohomCalg} core program) related or other technical questions to \href{https://benjaminjurke.net}{Benjamin~Jurke}, reachable via eMail: \href{mailto:mail@benjaminjurke.net?subject=cohomCalg}{mail@benjaminjurke.net}.\label{contactaddress}\\[2mm]
-For all questions regarding the {\cohomCalgKoszul} extension please refer to Thorsten~Rahn (\href{mailto:rahn@mppmu.mpg.de?subject=cohomCalg}{rahn@mppmu.mpg.de}).
+Please send all C/{\CPP}~implementation ({\cohomCalg} core program) related or other technical questions to \href{https://benjaminjurke.com}{Benjamin~Jurke}, reachable via eMail: \href{mailto:mail@benjaminjurke.com?subject=cohomCalg}{mail@benjaminjurke.com}.\label{contactaddress}\\[2mm]
+For all questions regarding the {\cohomCalgKoszul} extension please refer to Thorsten~Rahn (\href{mailto:thorsten.rahn@gmail.com?subject=cohomCalg}{thorsten.rahn@gmail.com}).
 
 \clearpage
 
@@ -206,7 +206,7 @@ For all questions regarding the {\cohomCalgKoszul} extension please refer to Tho
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\cohomCalg} (an acronym pronounced ``cohom-calc'') is an implementation of the sheaf cohomology computation algorithm for line bundles on toric spaces presented in detail in \cite{CohomOfLineBundles:Algorithm} and subsequently proven in \cite{CohomOfLineBundles:Proof, Jow:2010arXiv1006.0780J}. Several applications are discussed in \cite{CohomOfLineBundles:Applications, Blumenhagen:2011xn}. The program is freely available under the GNU General Public Licence version 3.0 (\href{http://www.gnu.org/licenses/gpl.html}{GPLv3}) on our website
+{\cohomCalg} (an acronym pronounced ``cohom-calc'') is an implementation of the sheaf cohomology computation algorithm for line bundles on toric spaces presented in detail in \cite{CohomOfLineBundles:Algorithm} and subsequently proven in \cite{CohomOfLineBundles:Proof, Jow:2010arXiv1006.0780J}. Several applications are discussed in \cite{CohomOfLineBundles:Applications, Blumenhagen:2011xn}. The program is freely available under the GNU General Public Licence version 3.0 (\href{http://www.gnu.org/licenses/gpl.html}{GPLv3}) on the repository site
 \[
 \text{\href{https://github.com/BenjaminJurke/cohomCalg}{https://github.com/BenjaminJurke/cohomCalg}.}
 \]
@@ -217,12 +217,11 @@ The Koszul extension of the {\cohomCalg} package is a {\it Mathematica 7} and {\
 
 {\bf Note:} Throughout this manual we assume some basic knowledge of toric geometry. A concise introduction to the subject can be found in \cite{CohomOfLineBundles:Algorithm}.\\
 
-{\bf Acknowledgement:} Thanks to \href{http://www2.piedmont.edu/math/dtorrance/}{Doug Torrance} for several improvements and reorganizing {\cohomCalg} into a Debian package.\\[3cm]
+{\bf Acknowledgement:} Thanks to \href{http://www2.piedmont.edu/math/dtorrance/}{Doug Torrance} for several improvements and reorganizing {\cohomCalg} into a Debian package.\\[5cm]
 
 {\bf External dependencies}: The {\cohomCalg} package makes use of the following external libraries:
 \begin{itemize}
   \item The Polyhedral Library ({\tt PolyLib}); \href{http://www.gnu.org/licenses/gpl.html}{GPLv3 license}; mathematical library for computations involving polyhedra, used in the counting of monomials; available for download at \href{http://icps.u-strasbg.fr/polylib/}{http://icps.u-strasbg.fr/polylib/}
-	\item \addPP{TinyThread}; \href{http://www.opensource.org/licenses/zlib-license.php}{zlib/libpng license}; minimalistic cross-platform {{\CPP}0x} standard compatible multi-threading library for \CPP, available for download at \href{http://tinythread.sourceforge.net/}{http://tinythread.sourceforge.net/}
 \end{itemize}
 
 
@@ -534,12 +533,6 @@ A somewhat minor problem is the instability of the monomial files. As the comput
 \vspace{3mm}
 Aside from that we are reasonably certain that quite a number of bugs and problems are still included. Please let us know any problems you may find, see page \pageref{contactaddress} for contact information.
 
-\vspace{5cm}
-\noindent
-{\bf Note:} The {\cohomCalg} {\CPP} core program can be tried online (without any kind of installation or other dependencies) at
-\[
-	\text{\url{http://cohomcalg.benjaminjurke.net}}
-\]
 
 
 \clearpage
@@ -830,7 +823,7 @@ Since it may be useful to see how the long exact sequences involved in the inter
 	\item ``{\tt Verbose6}'': This Verbose function only works for the equivariant cohomology calculation and shows you the representatives of the cohomology of the corresponding line bundle. It also prints how the $\mathbb Z^n$-action acts on them and which of the Laurent monomials are invariant.
 \end{itemize}
 
-There is one more optional input parameter in which you can let the program know if you are using {\it Mathematica 7} in a terminal or with the graphical interface. Chose {\tt ''Terminal``} for {[Optional: Input Type]} if you are using the terminal interface.
+There is one more optional input parameter in which you can let the program know if you are using {\it Mathematica~7} in a terminal or with the graphical interface. Chose {\tt ''Terminal``} for {[Optional: Input Type]} if you are using the terminal interface.
 
 \clearpage
 
@@ -844,7 +837,7 @@ If you find the {\cohomCalg} package useful to your project please have a look i
 \section*{Acknowledgements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-We would like to thank Jim Halverson for bug reporting and general feedback as well as Fabian Rühle for pointing out compatibility issues with Mathematica 8. Furthermore, we are grateful to Prof.~Alois Kabelschacht for his help in the distribution of this project.
+We would like to thank Jim Halverson for bug reporting and general feedback as well as Fabian Rühle for pointing out compatibility issues with Mathematica~8. Furthermore, we are grateful to Prof.~Alois Kabelschacht for his help in the distribution of this project.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
