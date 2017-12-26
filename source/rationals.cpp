@@ -584,7 +584,7 @@ void CountRationalFunctionsWorker(void *p_dat)
 	crd->bReturn = true;
 }
 
-std::vector< std::pair<tthread::thread *, void *> > CRationals::WorkersList;
+std::vector< std::pair<thread *, void *> > CRationals::WorkersList;
 
 //#define USE_MULTITHREADED_MONOMIAL_COUNTING
 // It appears that the PolyLib is NOT thread-safe (causing a weird kind of heap corruption), therefore for the moment we are stuck with a single-threaded evaluation of the rational counting... :-(

@@ -20,11 +20,11 @@
 #include <fstream>
 #include <ctime>
 #include <cstring>
+#include <thread>
 
 #include "secondarycohom.h"
 #include "main.h"
 #include "platform.h"
-#include "tinythread.h"
 
 
 using namespace std;
@@ -120,7 +120,7 @@ void CSecondaryCohomology::PrintMonomMap(const CInternalData &id, bool shorten_o
        part of the secondary/remnant sequences is printed. Furthermore an automatic shortening
        of excessive large outputs can be activated. */
 
-    // Determine the smalles and highest non-trivial c-degree in the entire list
+    // Determine the smallest and highest non-trivial c-degree in the entire list
     int32_t min_deg = len_c_deg;
     int32_t max_deg = 0;
     for (MonomMap::const_iterator set_iter = unique_monoms.begin(); set_iter != unique_monoms.end(); set_iter++)
@@ -241,8 +241,8 @@ struct FastMonomialData
 
 void SortAndFlushBuffer(vector<FastMonomialData> &buffer, MonomMap &unique_monoms, size_t max_run, MonomData &insertion_prototype, int min_c_deg)
 {
-    /* This internal helper function flushes the monomial insertial buffer. As the monomials
-       are kept in an associatate list, it helps to presort the momials, such that the number
+    /* This internal helper function flushes the monomial insertion buffer. As the monomials
+       are kept in an associate list, it helps to presort the monomials, such that the number
        of look-ups in the associative index is minimized. */
 
     if (max_run > 0)
@@ -352,14 +352,14 @@ bool CSecondaryCohomology::TraverseSRpowerset(const CInternalData &id)
        of subsets of the Stanley-Reisner generators and computes the corresponding
        monomial unions as well as the secondary/remnant sequences. */
 
-    // As an enourmous speedup, we are using a union buffer analogous to the counting of the bits
+    // As an enormous speedup, we are using a union buffer analogous to the counting of the bits
     // Since we are dealing with 64 bit variables, we are using 4 bit buffer for 16-bit blocks, such
     // that the buffer size is 4*8*64 KB = 2 MBr. Note that this buffer has to be allocated
     // dynamically, otherwise the MS VS compiler throws a stack overflow in debug mode.
 
 
 	// Prepare and setup the worker threads
-	size_t numWorkers = tthread::thread::hardware_concurrency();
+	unsigned int numWorkers = thread::hardware_concurrency();
 	if (numWorkers == 0)
 		numWorkers = 4;
 
@@ -376,7 +376,7 @@ bool CSecondaryCohomology::TraverseSRpowerset(const CInternalData &id)
 	paddedSRvec.resize(64, 0);
 	vector<double> WorkerStatus;
 	WorkerStatus.resize(numWorkers, 0.0);
-	for (size_t k = 0; k<numWorkers; k++)
+	for (unsigned int k = 0; k < numWorkers; k++)
 	{
 		workerdat[k].vBuffer.resize(INSERTION_BUFFERSIZE);
 		workerdat[k].window_start = k*sr_powerset_max_per_worker;
@@ -413,10 +413,10 @@ bool CSecondaryCohomology::TraverseSRpowerset(const CInternalData &id)
 	paddedSRvec.clear();
 
 	// Start the workers
-	vector<tthread::thread *> worker_threads;
+	vector<thread *> worker_threads;
 	for (size_t k = 0; k<numWorkers; k++)
 	{
-		tthread::thread *t = new tthread::thread(TraverseWorkerFunction, (void*) &workerdat[k]);
+		thread *t = new thread(TraverseWorkerFunction, (void*) &workerdat[k]);
 		worker_threads.push_back(t);		
 	}
 	
@@ -426,7 +426,7 @@ bool CSecondaryCohomology::TraverseSRpowerset(const CInternalData &id)
 	wstat->Run = true;
 	wstat->status = &WorkerStatus;
 	wstat->start = clock();
-	tthread::thread *stat = new tthread::thread(StatusOutputWorker, wstat);
+	thread *stat = new thread(StatusOutputWorker, wstat);
 
 	// Wait for the threads to complete...
 	for (size_t k = 0; k<numWorkers; k++)

@@ -36,6 +36,7 @@
     #define safe_sprintf sprintf_s
     #define string_to_int64(__v_val_) _atoi64(__v_val_)
 
+    #define WIN32_LEAN_AND_MEAN
 	#include <Windows.h>
 	inline void SleepMilliSec(unsigned long ulMilliseconds)
 	{

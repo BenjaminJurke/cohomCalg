@@ -20,9 +20,9 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <thread>
 #include "iohandler.h"
 #include "secondarycohom.h"
-#include "tinythread.h"
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -68,7 +68,7 @@ class CCohomology
 	static void SummarizeCohomologies(const std::vector<CCohomology> &cohomologies);
     static void GetMathematicaCohomologiesList(const std::vector<CCohomology> &cohomologies, std::string &out);
 
-	// Data retrival
+	// Data retrieval
     inline bool IsAmbiguous() const     { return (CohomologyDims.size() != 1); };
     inline bool IsNotDetermined() const { return (CohomologyDims.size() < 1); };
 };
@@ -77,7 +77,7 @@ class CCohomology
 class CRationals
 {
   private:
-	static std::vector< std::pair<tthread::thread *, void *> > WorkersList;       // contains the list of worker threads;
+	static std::vector< std::pair<std::thread *, void *> > WorkersList;       // contains the list of worker threads;
 	static bool WaitForAllWorkersFinish();
 
   private:

@@ -32,8 +32,8 @@ using namespace std;
 
 
 #define APP_NAME      "cohomCalg"
-#define APP_VERSION   "0.31d"
-#define APP_AUTHOR    "author: Benjamin Jurke (mail@benjaminjurke.net)" << std::endl << "    Based on the algorithm presented in arXiv:1003.5217"
+#define APP_VERSION   "0.32"
+#define APP_AUTHOR    "author: Benjamin Jurke (mail@benjaminjurke.com)" << std::endl << "    Based on the algorithm detailed in arXiv:1003.5217"
 #define APP_PLATFORM  APP_TARGET_OS << " " << APP_ARCH
 
 
