@@ -14,7 +14,7 @@ Use   \cite{cohomCalg:Implementation}   at the appropiate place of your TeX file
 @Misc{cohomCalg:Implementation,
      title        = "{\fontfamily{put}\bfseries\footnotesize\selectfont cohomCalg} package",
      howpublished = "Download link",
-     url          = "http://wwwth.mppmu.mpg.de/members/blumenha/cohomcalg/",
+     url          = "https://github.com/BenjaminJurke/cohomCalg",
      note         = "High-performance line bundle cohomology computation based on \cite{CohomOfLineBundles:Algorithm}",
      year         = "2010"
 }
@@ -23,7 +23,7 @@ Use   \cite{cohomCalg:Implementation}   at the appropiate place of your TeX file
      title     = "{Cohomology of Line Bundles: A Computational Algorithm}",
      publisher = "AIP",
      year      = "2010",
-		 journal   = "J.~Math.~Phys.",
+	 journal   = "J.~Math.~Phys.",
      volume    = "51",
      number    = "10",
      eid       = "103525",
@@ -49,7 +49,7 @@ Standard BibTeX entry:
 @Misc{cohomCalg:Implementation,
      title        = "cohomCalg package",
      howpublished = "Download link",
-     url          = "http://wwwth.mppmu.mpg.de/members/blumenha/cohomcalg/",
+     url          = "https://github.com/BenjaminJurke/cohomCalg",
      note         = "High-performance line bundle cohomology computation based on \cite{CohomOfLineBundles:Algorithm}",
      year         = "2010"
 }
@@ -58,7 +58,7 @@ Standard BibTeX entry:
      title     = "{Cohomology of Line Bundles: A Computational Algorithm}",
      publisher = "AIP",
      year      = "2010",
-		 journal   = "J.~Math.~Phys.",
+	 journal   = "J.~Math.~Phys.",
      volume    = "51",
      number    = "10",
      eid       = "103525",

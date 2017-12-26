@@ -5,7 +5,7 @@
 > A software package for computation of sheaf cohomologies  
 > for line bundles on toric varieties.
 
-**Authors:** [Ralph Blumenhagen](http://wwwth.mpp.mpg.de/members/blumenha/), [Benjamin Jurke](https://benjaminjurke.net), [Thorsten Rahn](http://thorsten-rahn.net), Helmut Roschy
+**Authors:** [Ralph Blumenhagen](http://wwwth.mpp.mpg.de/members/blumenha/), [Benjamin Jurke](https://benjaminjurke.com), Thorsten Rahn, Helmut Roschy
 
 # Project history
 
@@ -13,17 +13,18 @@ The algorithm for the computation of sheaf cohomologies for line bundles on tori
 
 About three months after the initial conjecture's preprint release, a proof of the algorithm was presented in [arXiv:1006.2392 [hep-th]](http://arxiv.org/abs/1006.2392), which also clarifies much of the underlying mathematical structures. At the same time an independant proof was developed in [arXiv:1006.0780 [math.AG]](http://arxiv.org/abs/1006.0780) - published in fact a few days earlier - which utilized alternative methods. 
 
-The [full background story](https://cohomcalg.benjaminjurke.net/) can be found here along with some simple examples.
+The [full background story](https://benjaminjurke.com/academia-and-research/cohomcalg/) can be found here along with some simple examples.
 
 The source code is freely available under the GNU GPL v3 license terms. Furthermore, the implementation makes use of The Polyhedral Library (or [PolyLib](http://icps.u-strasbg.fr/polylib/) for short), which is available here under the same license.
 
 # Documentation
 
-A full documentation and several example input files are included in the cohomCalg download package, see "[manual.pdf](https://github.com/BenjaminJurke/cohomCalg/blob/master/manual.pdf)". Furthermore, you can [eMail us](mailto:mail@benjaminjurke.net?subject=cohomCalg) for technical support or other related questions. For ease of use the package includes pre-compiled binaries for Microsoft Windows both in 32- and 64-bit versions, with the latter being considerably faster.
+A full documentation and several example input files are included in the cohomCalg download package, see "[manual.pdf](https://github.com/BenjaminJurke/cohomCalg/blob/master/manual.pdf)". Furthermore, you can [eMail us](mailto:mail@benjaminjurke.com?subject=cohomCalg) for technical support or other related questions. For ease of use the package includes pre-compiled binaries for Microsoft Windows both in 32- and 64-bit versions, with the latter being considerably faster.
 
 
 # Changelog
 
+* **v0.32** (December 26, 2017): Replaced TinyThread++ by C++11 std::thread, Intel C++ 18.0 Windows binaries.
 * **v0.31d** (January 16, 2017): Several minor updates and corrections.
 * **v0.31c** (January 14, 2017): Minor update due to GCC 6.2 compatibility issues, recompiled Windows binaries.
 * **v0.31b** (April 18, 2012): Minor bugfix due to GCC 4.6 compatibility issues.
@@ -65,7 +66,7 @@ Or you can simply **Copy&Paste the following BibTeX snippet** provided for conve
 @Misc{cohomCalg:Implementation,
    title     = "{cohomCalg package}",
    howpublished  = "Download link",
-   url       = "http://wwwth.mppmu.mpg.de/members/blumenha/cohomcalg/",
+   url       = "https://github.com/BenjaminJurke/cohomCalg",
    note      = "High-performance line bundle cohomology computation based on \cite{Blumenhagen:2010pv}",
    year      = "2010"}
 ````
