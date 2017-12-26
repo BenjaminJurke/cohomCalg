@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\source\iohandler.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\tokenizer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\rationals.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\main.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\secondarycohom.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\alpha.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\compress_parms.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\ehrhart.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\errormsg.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\errors.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\eval_ehrhart.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\ext_ehrhart.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\homogenization.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\Lattice.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\Matop.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\matrix.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\matrix_addon.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\matrix_permutations.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\NormalForms.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\param.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\polyhedron.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\polyparam.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\ranking.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\SolveDio.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\vector.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\polylib_mod\Zpolyhedron.c">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\iohandler.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\tokenizer.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\rationals.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\main.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\secondarycohom.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\platform.h">
+      <Filter>Source files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\alpha.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\arithmetic_errors.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\arithmetic_errors.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\arithmetique.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\arithmetique.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\compress_parms.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\ehrhart.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\errormsg.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\eval_ehrhart.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\ext_ehrhart.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\homogenization.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\Lattice.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\Matop.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\matrix.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\matrix_addon.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\matrix_permutations.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\NormalForms.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\param.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\polyhedron.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\polylib.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\polylib32.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\polylib64.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\polylibgmp.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\polyparam.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\ranking.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\SolveDio.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\types.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\vector.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\polylib_mod\polylib\Zpolyhedron.h">
+      <Filter>Source files\polylib_mod</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\polylib_mod\COPYING">
+      <Filter>Source files\polylib_mod</Filter>
+    </None>
+    <None Include="..\..\source\polylib_mod\polylib\polylib.h.in">
+      <Filter>Source files\polylib_mod</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{a82e9af4-3eeb-4af7-843c-7ff90d65a02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\polylib_mod">
+      <UniqueIdentifier>{e6e5ab04-9bcc-4fc2-9287-894ad25645e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="cohomCalg.rc">
+      <Filter>Source files\polylib_mod</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Lightbulb.ico">
+      <Filter>Source files\polylib_mod</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
