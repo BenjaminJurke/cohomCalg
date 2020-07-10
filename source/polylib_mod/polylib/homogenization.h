@@ -17,7 +17,7 @@
 
 /** homogenization.h -- Bavo Nootaert **/
 #ifndef HOMOGENIZATION_H
-#define HOMOGENIZATTON_H
+#define HOMOGENIZATION_H
 
 #include <polylib/polylib.h>
 
