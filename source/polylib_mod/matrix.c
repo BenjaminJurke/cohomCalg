@@ -150,7 +150,7 @@ void Matrix_Print(FILE *Dst, const char *Format, Matrix *Mat)
     p=*(Mat->p+i);
     for (j=0;j<NbColumns;j++) {
       if (!Format) {
-	value_print(Dst," "P_VALUE_FMT" ",*p++);
+	value_print(Dst," " P_VALUE_FMT " ",*p++);
       }
       else { 
 	value_print(Dst,Format,*p++);
