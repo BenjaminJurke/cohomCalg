@@ -4,12 +4,11 @@
 #                                                                       #
 #########################################################################
 
-# compilers & flags
-CC        := g++
-CFLAGS    := -O3
-LD        := g++
+# flags
+CFLAGS    ?= -O3
+CXXFLAGS  ?= -O3
 # Note: (1) If you want to enforce 32-bit or 64-bit compilation, 
-#           add "-m32" or "-m64" to both CFLAGS and LDFLAGS.
+#           add "-m32" or "-m64" to CFLAGS, CXXFLAGS and LDFLAGS.
 #       (2) If you want to enforce a static linking of all libraries 
 #           (i.e. include everything into one binary), add "-static" to LDFLAGS
 
@@ -35,7 +34,7 @@ vpath %.cpp $(COHOMCALG_SRC_DIR)
 # macros for .c/.cpp dirs
 define make-goal-cpp
 $1/%.o: %.cpp
-	$(CC) $(INCLUDES) $(DEFS) $(CPPFLAGS) $(CXXFLAGS) -c $$< -o $$@
+	$(CXX) $(INCLUDES) $(DEFS) $(CPPFLAGS) $(CXXFLAGS) -c $$< -o $$@
 endef
 
 define make-goal-c
@@ -49,7 +48,7 @@ endef
 all: checkdirs bin/cohomcalg
 
 bin/cohomcalg: $(COHOMCALG_OBJ) $(POLYLIB_OBJ)
-	$(LD) $^ $(LDFLAGS) -lpthread -o $@
+	$(CXX) $(LDFLAGS) $^ $(LDLIBS) -lpthread -o $@
 #-static -lsource/polylib-5.22.5/.libs/libpolylib64.a
 
 checkdirs: $(BUILD_DIR)
